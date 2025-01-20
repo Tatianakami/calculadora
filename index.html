@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-numbers">
+        <!-- Distribuição aleatória dos números -->
+        <span class="number" style="left: 5%; animation-delay: 0s;">1</span>
+        <span class="number" style="left: 20%; animation-delay: 2s;">2</span>
+        <span class="number" style="left: 35%; animation-delay: 4s;">3</span>
+        <span class="number" style="left: 50%; animation-delay: 6s;">4</span>
+        <span class="number" style="left: 65%; animation-delay: 8s;">5</span>
+        <span class="number" style="left: 80%; animation-delay: 10s;">6</span>
+        <span class="number" style="left: 95%; animation-delay: 12s;">7</span>
+    </div>
+    
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="button" onclick="appendNumber(7)">7</button>
+            <button class="button" onclick="appendNumber(8)">8</button>
+            <button class="button" onclick="appendNumber(9)">9</button>
+            <button class="button" onclick="chooseOperation('/')">/</button>
+            <button class="button" onclick="appendNumber(4)">4</button>
+            <button class="button" onclick="appendNumber(5)">5</button>
+            <button class="button" onclick="appendNumber(6)">6</button>
+            <button class="button" onclick="chooseOperation('*')">*</button>
+            <button class="button" onclick="appendNumber(1)">1</button>
+            <button class="button" onclick="appendNumber(2)">2</button>
+            <button class="button" onclick="appendNumber(3)">3</button>
+            <button class="button" onclick="chooseOperation('-')">-</button>
+            <button class="button" onclick="appendNumber(0)">0</button>
+            <button class="button" onclick="appendNumber('.')">.</button>
+            <button class="button" onclick="calculate()">=</button>
+            <button class="button" onclick="chooseOperation('+')">+</button>
+            <button class="button clear" onclick="clearDisplay()">C</button>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <!-- Letras separadas para animação -->
+        <span>D</span><span>e</span><span>s</span><span>e</span><span>n</span><span>v</span><span>o</span><span>l</span><span>v</span><span>i</span><span>d</span><span>o</span>
+        <span> </span>
+        <span>p</span><span>o</span><span>r</span>
+        <span> </span>
+        <span>T</span><span>a</span><span>t</span><span>i</span><span>a</span><span>n</span><span>a</span>
+        <span> </span>
+        <span>K</span><span>a</span><span>m</span><span>i</span>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
